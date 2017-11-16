@@ -13,7 +13,7 @@ class IndexItem extends Component {
       this.addItemService = new ItemService();
     }
     componentDidMount(){
-      axios.get('https://60e54122.ngrok.io/items')
+      axios.get('https://plugin-server-ecom.herokuapp.coms/items')
       .then(response => {
         this.setState({ items: response.data });
       })

@@ -13,7 +13,7 @@ class ProductMapping extends Component {
       this.productMappingService = new ProductMappingService();
     }
     componentDidMount(){
-      axios.get('https://60e54122.ngrok.io/pluginAdmin/getProducts')
+      axios.get('https://plugin-server-ecom.herokuapp.com/pluginAdmin/getProducts')
       .then(response => {
         this.setState({ shopifyProducts: response.data });
       })

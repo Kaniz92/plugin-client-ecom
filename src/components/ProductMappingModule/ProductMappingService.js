@@ -1,5 +1,5 @@
 import axios from 'axios';
-const serverAddress = 'https://60e54122.ngrok.io';
+const serverAddress = 'https://plugin-server-ecom.herokuapp.com';
 
 class ProductMappingService{
     //send mapping data
